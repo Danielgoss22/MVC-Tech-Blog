@@ -1,33 +1,33 @@
 <section class="d-flex justify-content-center align-self-center">
+  <div>
+    <div>
+      <div class="border border-black bg-light align-self-center">
+        <h3>Welcome Back!</h3>
         <div>
-            <div>
-                <div class="border border-black bg-light align-self-center">
-                    <h3>Welcome Back!</h3>
-                    <div>
-                        <form>
-                            <p>Username</p>
-                            <div>
-                                <div>
-                                    <inputtype="text" placeholder="Username" autofocus="" id="user-name">
-                                </div>
-                            </div>
-                            <p>Password</p>
-                            <div>
-                                <div>
-                                    <input type="password" placeholder="Password" id="password">
-                                </div>
-                            </div>
-                            <buttoN>Login</button>
-                        </form>
-                    </div>
-                    <p>
-                    <a style="color:rgb(0, 26, 255);font-weight:bold" href="/signup">New Here?  Click to Sign-up Instead</a>
-                    </p>
-                    <p>--------------------</p>
-                    <p>
-                        <a style="color:rgb(0, 26, 255);font-weight:bold" href="/">Home Page</a>
-                    </p>
-                </div>
+          <form class="form login-form">
+            <div class="form-group">
+              <label for="email-login">email:</label>
+              <input class="form-input" type="text" id="email-login" />
             </div>
+            <div class="form-group">
+              <label for="password-login">password:</label>
+              <input class="form-input" type="password" id="password-login" />
+            </div>
+            <div class="form-group">
+              <button class="btn btn-primary" type="submit">login</button>
+            </div>
+          </form>
         </div>
-    </section>
+        <p>
+          <a style="color:rgb(0, 26, 255);font-weight:bold" href="/signup">New
+            Here? Click to Sign-up Instead</a>
+        </p>
+        <p>--------------------</p>
+        <p>
+          <a style="color:rgb(0, 26, 255);font-weight:bold" href="/">Home Page</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<script src="../public/js/login.js"></script>

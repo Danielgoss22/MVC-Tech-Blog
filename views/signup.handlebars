@@ -1,45 +1,42 @@
 <section class="d-flex justify-content-center">
-      <div >
-        <div >
-          <div class="border border-black bg-light">
-            <h3 >Welcome!</h3>
-            <p >Please enter your signup information below</p>
-            <div >
-              <form>
-                <p>Enter a unique username</p>
-                <div >
-                  <div >
-                    <input
-                      
-                      type="text"
-                      placeholder="Username"
-                     
-                    />
-                  </div>
-                </div>
-                <p>Password must be 8 characters in lenght</p>
-                <div>
-                  <div>
-                    <inputtype="password" placeholder="Password" />
-                  </div>
-                </div>
-                <buttonid="signup-btn">
-                  Signup <i  aria-hidden="true"></i>
-                </button>
-              </form>
+  <div>
+    <div>
+      <div class="border border-black bg-light">
+        <h3>Welcome!</h3>
+        <p>Please enter your signup information below</p>
+        <div>
+          <form class="form signup-form">
+            <div class="form-group">
+              <label for="name-signup">Username:</label>
+              <input class="form-input" type="text" id="username-signup" />
             </div>
-            <p>
-              <a style="color: rgb(0, 26, 255); font-weight: bold" href="/login"
-                >Click here to Login Instead</a
-              >
-            </p>
-            <p>--------------------</p>
-            <p>
-              <a style="color: rgb(0, 26, 255); font-weight: bold" href="/"
-                >Home Page</a
-              >
-            </p>
-          </div>
+            <div class="form-group">
+              <label for="email-signup">email:</label>
+              <input class="form-input" type="text" id="email-signup" />
+            </div>
+            <div class="form-group">
+              <label for="password-signup">password:</label>
+              <input class="form-input" type="password" id="password-signup" />
+            </div>
+            <div class="form-group">
+              <button class="btn btn-primary" type="submit">signup</button>
+            </div>
+          </form>
         </div>
+        <p>
+          <a
+            style="color: rgb(0, 26, 255); font-weight: bold"
+            href="/login"
+          >Click here to Login Instead</a>
+        </p>
+        <p>--------------------</p>
+        <p>
+          <a style="color: rgb(0, 26, 255); font-weight: bold" href="/">Home
+            Page</a>
+        </p>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+
+<script src="../public/js/login.js"></script>
