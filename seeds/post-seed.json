@@ -1,0 +1,22 @@
+[
+  {
+    "user_id": 1,
+    "post_title": "testing posts",
+    "post_body": "will it work?"
+  },
+  {
+    "user_id": 2,
+    "post_title": "testing posts",
+    "post_body": "will it work?"
+  },
+  {
+    "user_id": 3,
+    "post_title": "testing posts",
+    "post_body": "will it work?"
+  },
+  {
+    "user_id": 4,
+    "post_title": "testing posts",
+    "post_body": "will it work?"
+  }
+]

@@ -14,14 +14,14 @@
             <div>
               <h3 style="font-size:125%;font-weight:bolder"><a
                   href="/dashboard/{{post.id}}"
-                >{{post.post_title}}</a></h3>
+                >{{post_title}}</a></h3>
               <h4>Posted By
-                {{users.username}}
+                {{{username}}}
                 on
                 {{format_date post.date_created}}
               </h4>
               <div>
-                <p>{{post.post_body}}</p>
+                <p>{{post_body}}</p>
               </div>
             </div>
           {{/each}}
