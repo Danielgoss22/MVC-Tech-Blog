@@ -12,7 +12,7 @@
   <body>
     <nav class="navbar">
       <div class="container">
-        <div class="navbar-brand">
+        <div>
           <a
             style="font-family: courier; font-size: 300%; font-weight: bolder"
             class="navbar-item"
@@ -27,7 +27,7 @@
           </span>
         </div>
         <div>
-          <div class="navbar-end">
+          <div>
             <a class="navbar-item is-active"> Home </a>
             {{#if logged_in}}
             <a class="navbar-item" href="./dashboard"> Dashboard </a>
@@ -36,35 +36,52 @@
             <a class="navbar-item" href="/login"> Login </a>
             <a class="navbar-item" href="/signup"> Signup </a>
             {{/if}}
+          </div>
         </div>
       </div>
     </nav>
-
-    <section class="container">
+    <section>
       <div>
-        <div>
-          <h1>Featured Posts</h1>
+        <div class="container">
+          <h1 class="title">Edit Post</h1>
         </div>
       </div>
     </section>
 
     <div class="container">
-      <section class="border border-3 border-black">
+      <section>
         <div>
-          <div>
-            <div>
+          <div class="mt-5">
+            <div class="card-content">
               <div>
-                <h3 style="font-size: 125%; font-weight: bolder">
-                  <a href="/posts"></a>
-                </h3>
                 <div>
-                  <h4>Posted by</h4>
+                  <h4>Updated on</h4>
                 </div>
+                <div class="m-2">
+                  <h4>Title</h4>
+                </div>
+                <input type="text" />
+                <div class="m-2">
+                  <h4>Content</h4>
+                </div>
+                <textarea>edit post content</textarea>
               </div>
-              <div>
-                <p></p>
-              </div>
+              <divmt-5">
+              <button id="update-post">Update</button>
+              <button id="delete-post">Delete</button>
             </div>
+          </div>
+        </div>
+        <div class="mt-5">
+          <h4>Comments</h4>
+        </div>
+        post comments
+        <div class="mt-5">
+          <div class="comments">
+            <div>
+              <h4>Posted by</h4>
+            </div>
+            <div>comments</div>
           </div>
         </div>
       </section>

@@ -1,0 +1,25 @@
+<div class="container">
+  <section>
+    <div class="column-8">
+      <div class="card article">
+        <div class="card-content">
+          {{#each posts as |post|}}
+            <div>
+              <h3
+                style="font-size:125%;font-weight:bolder"
+              >{{post.post_title}}</h3>
+              <h4>Posted By
+                {{users.username}}
+                on
+                {{format_date post.date_created}}
+              </h4>
+              <div>
+                <p>{{post.post_body}}</p>
+              </div>
+            </div>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

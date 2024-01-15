@@ -29,10 +29,13 @@
         <div>
           <div>
             <a class="navbar-item is-active"> Home </a>
+            {{#if logged_in}}
             <a class="navbar-item" href="./dashboard"> Dashboard </a>
             <a class="navbar-item" id="logout"> Logout </a>
+            {{else}}
             <a class="navbar-item" href="/login"> Login </a>
             <a class="navbar-item" href="/signup"> Signup </a>
+            {{/if}}
           </div>
         </div>
       </div>
@@ -57,7 +60,7 @@
     <div class="ps-5 mt-5">
       <button>Add Comment</button>
     </div>
-    <div class="card article mt-5">
+    <div class="mt-5">
       <div class="">
         <div class="">
           <h4 class="">commented on</h4>
