@@ -29,10 +29,13 @@
         <div>
           <div>
             <a class="navbar-item is-active"> Home </a>
+            {{#if logged_in}}
             <a class="navbar-item" href="./dashboard"> Dashboard </a>
             <a class="navbar-item" id="logout"> Logout </a>
+            {{else}}
             <a class="navbar-item" href="/login"> Login </a>
             <a class="navbar-item" href="/signup"> Signup </a>
+            {{/if}}
           </div>
         </div>
       </div>
