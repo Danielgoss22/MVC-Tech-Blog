@@ -1,5 +1,4 @@
 <html lang="en">
-
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,31 +11,20 @@
   </head>
 
   <body>
-    <header>
+    <header class="display-flex justify-space-between align-center p-2">
       <h1>Tech Blog</h1>
-    </header>
-    <nav>
-      <div class="navbar-end">
-        <a class="navbar-item is-active"> Home </a>
-
-        <a class="navbar-item" href="./dashboard"> Dashboard </a>
-
-        <a class="navbar-item" id="logout"> Logout </a>
-
-        <a class="navbar-item" href="/login"> Login </a>
-        <a class="navbar-item" href="/signup"> Signup </a>
-
-        <a href="/">Home</a>
-        {{#if loggedIn}}
-          <a id="logout" class="btn-no-style">Logout</a>
+      <nav>
+        {{#if logged_in}}
+          <a href="/dashboard">Dashboard</a>
+          <a href="/home">Homepage</a>
+          <button class="no-button" id="logout">logout</button>
         {{else}}
-          <a href="/login">Login</a>
+          <a href="/login">login</a>
         {{/if}}
-      </div>
-    </nav>
+      </nav>
+    </header>
     <main>
       {{{body}}}
     </main>
   </body>
-
 </html>
