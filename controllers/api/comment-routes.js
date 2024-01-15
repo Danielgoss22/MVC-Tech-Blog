@@ -17,4 +17,37 @@ router.post("/", withAuth, async (req, res) => {
   }
 });
 
+router.put("/:id", withAuth, async (req, res) => {
+  try {
+    const updateComment = await Comments.update(req.body, {
+      where: {
+        id: req.params.id,
+      },
+    });
+    if (!updateComment[0]) {
+      res.status(404).json({ message: "comment not found" });
+    }
+    res.status(200).json(updateComment);
+  } catch (error) {
+    res.status(500).json(error);
+  }
+});
+
+router.delete("/:id", withAuth, async (req, res) => {
+  try {
+    const deleteComment = await Comments.destroy({
+      where: {
+        id: req.params.id,
+      },
+    });
+    if (!deleteComment) {
+      res.status(404).json({ message: "comment not found" });
+    }
+
+    res.status(200).json(deleteComment);
+  } catch (error) {
+    res.status(500).json(error);
+  }
+});
+
 module.exports = router;
