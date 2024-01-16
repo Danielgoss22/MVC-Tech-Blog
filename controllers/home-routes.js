@@ -26,7 +26,7 @@ router.get("/", async (req, res) => {
 });
 
 //send a user's own posts to their dashboard
-router.get("/", async (req, res) => {
+router.get("/dashboard", async (req, res) => {
   try {
     const postData = await Posts.findAll({
       where: {

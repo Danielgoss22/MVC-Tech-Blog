@@ -7,10 +7,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const comment = document.getElementById("newComment").value;
 
+    const url = document.URL;
+    const arrayURL = url.split("/");
+    const postId = arrayURL[arrayURL.length - 1];
+    const parseId = parseInt(postId);
     const newComment = {
+      post_id: parseId,
       comment_body: comment,
     };
-
     fetch("/api/comments/", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
