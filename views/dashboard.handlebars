@@ -30,3 +30,16 @@
     </div>
   </section>
 </div>
+<div class="container">
+  <div class="column-8"></div>
+  <form action="/api/posts" method="POST">
+    <h3>New Post</h3>
+    <label for="newPostTitle">Post title:</label>
+    <textarea id="newPostTitle" name="post_title"></textarea>
+    <br />
+    <label for="post_body">Post body:</label>
+    <textarea id="newPostBody" name="post_body"></textarea>
+    <br />
+    <input type="submit" value="create post" />
+  </form>
+</div>
