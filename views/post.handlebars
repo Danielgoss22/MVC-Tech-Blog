@@ -10,13 +10,12 @@
   <div class="m-5">
     <div class="m-5">
       <p>{{post_body}}</p>
-      {{#each post.comments}}
+      {{#each comments as |comment|}}
         <div class="comment">
-          <p>{{this}}</p>
+          <p>{{{comment_body}}}</p>
         </div>
       {{/each}}
     </div>
-    <h3 style="font-size: 125%; font-weight: bolder">{{posts.post_title}}</h3>
   </div>
 
 </div>
@@ -24,7 +23,8 @@
   <form method="post">
     <textarea id="newComment" name="newComment"></textarea>
     <br />
-    <button id="add-comment">Add Comment</button>
+    <button type="submit" id="add-comment">Add Comment</button>
 
   </form>
 </div>
+<script src="/js/comment.js"></script>
