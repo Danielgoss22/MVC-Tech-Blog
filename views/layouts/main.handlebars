@@ -14,13 +14,15 @@
     <header class="display-flex justify-space-between align-center p-2">
       <h1>Tech Blog</h1>
       <nav>
-
-        <a href="/dashboard">Dashboard</a>
-        <a href="/">Homepage</a>
+        <button><a
+            href="/dashboard"
+            class="header-button"
+          >Dashboard</a></button>
+        <button><a href="/" class="header-button">Homepage</a></button>
         {{#if logged_in}}
           <button class="no-button" id="logout">logout</button>
         {{else}}
-          <a href="/login">login</a>
+          <button><a href="/login" class="header-button">login</a></button>
         {{/if}}
       </nav>
     </header>
