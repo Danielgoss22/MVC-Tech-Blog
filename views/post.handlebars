@@ -11,12 +11,14 @@
     <div class="column-8">
       <div class="card article">
         <div class="card-content">
+          <h3>Comments</h3>
           {{#each comments as |comment|}}
+
             <div class="m-5">
               <div class="m-5">
-                <h3>{{{username}}}commented on
-                  {{format_date comment.createdAt}}
-                </h3>
+                {{!-- <h3>{{{username}}}commented on
+                  {{format_date createdAt}}
+                </h3> --}}
 
                 <div class="comment">
                   <p>{{comment_body}}</p>
