@@ -18,21 +18,20 @@ const seedDb = async () => {
       user_id: users[Math.floor(Math.random() * users.length)].id,
     });
   }
-  //   for (const comments of commentData) {
-  //     await Comments.create({
-  //       ...comments,
-  //       user_id: users[Math.floor(Math.random() * users.length)].id,
-  //     });
-  //   }
-  // }
-  //   console.log("\n----- DATABASE SYNCED -----\n");
-  //   await seedComment();
-  //   console.log("\n----- COMMENT SEEDED -----\n");
-  //   await seedPost();
-  //   console.log("\n----- POST SEEDED -----\n");
-  //   await seedUser();
-  //   console.log("\n----- USER SEEDED -----\n");
-
+  for (const comments of commentData) {
+    await Comments.create({
+      ...comments,
+      user_id: users[Math.floor(Math.random() * users.length)].id,
+    });
+  }
   process.exit(0);
 };
+//   console.log("\n----- DATABASE SYNCED -----\n");
+//   await seedComment();
+//   console.log("\n----- COMMENT SEEDED -----\n");
+//   await seedPost();
+//   console.log("\n----- POST SEEDED -----\n");
+//   await seedUser();
+//   console.log("\n----- USER SEEDED -----\n");
+
 seedDb();
