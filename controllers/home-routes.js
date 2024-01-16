@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const { Users, Posts } = require("../models");
+const { Users, Posts, Comments } = require("../models");
 
 //send all posts to the homepage
 router.get("/", async (req, res) => {
@@ -53,6 +53,10 @@ router.get("/posts/:id", async (req, res) => {
         {
           model: Users,
           attributes: ["username"],
+        },
+        {
+          model: Comments,
+          attributes: ["comment_body"],
         },
       ],
     });
