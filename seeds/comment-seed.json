@@ -1,0 +1,11 @@
+[
+  {
+    "post_id": 1,
+    "comment_body": "comment for post 7"
+  },
+
+  {
+    "post_id": 2,
+    "comment_body": "comment for post 6"
+  }
+]
