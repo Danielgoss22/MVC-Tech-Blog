@@ -2,22 +2,32 @@
   <div>
     <div class="container">
       <h2>{{post_title}}</h2>
+      <p>{{post_body}}</p>
     </div>
   </div>
 </section>
 <div class="container">
+  <section>
+    <div class="column-8">
+      <div class="card article">
+        <div class="card-content">
+          {{#each comments as |comment|}}
+            <div class="m-5">
+              <div class="m-5">
+                <h3>{{{username}}}commented on
+                  {{format_date comment.createdAt}}
+                </h3>
 
-  <div class="m-5">
-    <div class="m-5">
-      <p>{{post_body}}</p>
-      {{#each comments as |comment|}}
-        <div class="comment">
-          <p>{{{comment_body}}}</p>
+                <div class="comment">
+                  <p>{{comment_body}}</p>
+                </div>
+              </div>
+            </div>
+          {{/each}}
         </div>
-      {{/each}}
+      </div>
     </div>
-  </div>
-
+  </section>
 </div>
 <div>
   <form method="post">
