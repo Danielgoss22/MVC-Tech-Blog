@@ -7,3 +7,7 @@ A website to create blog posts about technology. Login or sign up with a usernam
 ## Screenshot
 
 ![alt text](public/images/Screenshot.jpg)
+
+## Deployed Application
+
+https://arcane-everglades-67451-cabfe7d853b5.herokuapp.com/
